@@ -1,0 +1,19 @@
+{
+	"tasks": {
+		"dev": "deno run --watch main.ts"
+	},
+	"lint": { "rules": { "tags": ["fresh", "recommended"] } },
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 90,
+		"indentWidth": 4,
+		"semiColons": false,
+		"singleQuote": true,
+		"proseWrap": "preserve",
+		"exclude": [ ".github/",".vscode/", "README.md","deno.json"]
+	},
+	"imports": {
+		"std/": "https://deno.land/std@0.219.0/",
+		"zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
+	}
+}
